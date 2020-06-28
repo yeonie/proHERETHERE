@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="replyViewController" customModule="ios" customModuleProvider="target">
+            <connections>
+                <outlet property="replyFeedTableView" destination="7zs-fd-qLX" id="rVR-Fg-RWg"/>
+                <outlet property="topbarView" destination="WFW-lK-AR7" id="XFq-nT-Rvh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WFW-lK-AR7">
+                    <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLK-a4-FGe">
+                            <rect key="frame" x="17" y="16.5" width="27" height="27"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="27" id="0vy-tY-Uxs"/>
+                                <constraint firstAttribute="width" constant="27" id="Poc-DO-nY6"/>
+                            </constraints>
+                            <state key="normal" image="backToTheFuture"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8d-p8-Uk3">
+                            <rect key="frame" x="371" y="16.5" width="27" height="27"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="27" id="qHG-6P-Pin"/>
+                                <constraint firstAttribute="width" constant="27" id="sc9-Pg-uCS"/>
+                            </constraints>
+                            <state key="normal" image="icsearch"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="댓글" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdS-Xq-Iq1">
+                            <rect key="frame" x="61" y="19" width="106" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="b5J-e7-o12"/>
+                                <constraint firstAttribute="width" constant="106" id="cBP-B2-7VQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <color key="textColor" red="0.27781575920000001" green="0.61318677659999998" blue="0.8745418787" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ax-il-vVg">
+                            <rect key="frame" x="334" y="16.5" width="27" height="27"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="27" id="3cV-Ak-Cf5"/>
+                                <constraint firstAttribute="height" constant="27" id="TmV-8D-9kZ"/>
+                            </constraints>
+                            <state key="normal" image="icfilter"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="bdS-Xq-Iq1" firstAttribute="leading" secondItem="cLK-a4-FGe" secondAttribute="trailing" constant="17" id="5E2-hn-LDI"/>
+                        <constraint firstAttribute="trailing" secondItem="d8d-p8-Uk3" secondAttribute="trailing" constant="16" id="IhC-xz-4hq"/>
+                        <constraint firstItem="cLK-a4-FGe" firstAttribute="centerY" secondItem="WFW-lK-AR7" secondAttribute="centerY" id="Mov-eN-t2c"/>
+                        <constraint firstItem="6Ax-il-vVg" firstAttribute="centerY" secondItem="WFW-lK-AR7" secondAttribute="centerY" id="Ytu-MW-sHD"/>
+                        <constraint firstItem="cLK-a4-FGe" firstAttribute="centerY" secondItem="bdS-Xq-Iq1" secondAttribute="centerY" id="gj6-kL-49E"/>
+                        <constraint firstAttribute="height" constant="60" id="iCq-nq-mvT"/>
+                        <constraint firstItem="cLK-a4-FGe" firstAttribute="leading" secondItem="WFW-lK-AR7" secondAttribute="leading" constant="17" id="nwL-UH-Etl"/>
+                        <constraint firstItem="d8d-p8-Uk3" firstAttribute="leading" secondItem="6Ax-il-vVg" secondAttribute="trailing" constant="10" id="o8B-tt-DEX"/>
+                        <constraint firstItem="d8d-p8-Uk3" firstAttribute="centerY" secondItem="WFW-lK-AR7" secondAttribute="centerY" id="t5f-ZX-Pth"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="fill" textAlignment="natural" minimumFontSize="17" background="writeBackground" translatesAutoresizingMaskIntoConstraints="NO" id="ohR-6j-CIG">
+                    <rect key="frame" x="0.0" y="799" width="414" height="63"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="63" id="SRt-nF-u7L"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7zs-fd-qLX">
+                    <rect key="frame" x="0.0" y="112" width="414" height="679"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ohR-6j-CIG" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="7oc-sQ-6Rn"/>
+                <constraint firstItem="WFW-lK-AR7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="L8G-qC-uSb"/>
+                <constraint firstItem="WFW-lK-AR7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="XcX-OU-Kfk"/>
+                <constraint firstItem="ohR-6j-CIG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ha0-sq-LwK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WFW-lK-AR7" secondAttribute="trailing" id="jNQ-7m-kRd"/>
+                <constraint firstItem="ohR-6j-CIG" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="vCM-j0-wS0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="136.60714285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backToTheFuture" width="24" height="24"/>
+        <image name="icfilter" width="24" height="24"/>
+        <image name="icsearch" width="24" height="24"/>
+        <image name="writeBackground" width="375" height="56"/>
+    </resources>
+</document>
